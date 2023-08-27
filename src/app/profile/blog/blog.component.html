@@ -1,0 +1,31 @@
+<div class="section" id="blog">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+          <div class="h4 text-center mb-4 title">Blog</div>
+        </div>
+      </div>
+      <div class="tab-content gallery mt-5">
+        <div class="tab-pane active" id="web-development">
+          <div class="ml-auto mr-auto">
+            <div class="row">
+              <div class="col-lg-4 col-md-12" *ngFor="let blog of blogData">
+                <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+                  <a href={{blog.url}}>
+                    <figure class="cc-effect">
+                      <img src={{blog.img}} alt="Image" />
+                      <figcaption>
+                        <div class="h4">{{blog.title}}</div>
+  
+                      </figcaption>
+                    </figure>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </div>

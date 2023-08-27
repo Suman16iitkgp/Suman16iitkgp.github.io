@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
-import { ProfileModule } from './profile/profile.module';
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -23,10 +22,10 @@ const routes : Routes = [
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    ProfileComponent,
     RouterModule.forRoot(routes, {
       initialNavigation : 'enabledBlocking'
     }),
-    ProfileModule,
     HttpClientModule
 
   ],
